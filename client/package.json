@@ -1,0 +1,19 @@
+{
+  "name": "roommates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalZonis/Roommates.git"
+  },
+  "author": "Michal Zonis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalZonis/Roommates/issues"
+  },
+  "homepage": "https://github.com/MichalZonis/Roommates#readme"
+}
