@@ -1,0 +1,10 @@
+<form>
+  <input [formControl]="newItem" class="form-control" type="text" placeholder="Add Item">
+  <button (click)="addItem(newItem.value)" type="button" class="btn btn-primary">
+    add
+    <i class="bi bi-plus-circle-fill"></i>
+  </button>
+</form>
+<div *ngFor="let item of list">
+  {{item}}
+</div>
