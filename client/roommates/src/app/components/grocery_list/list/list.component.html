@@ -1,7 +1,6 @@
-<form (submit)="addItem(newItem.value)">
+<form class="input-group" (submit)="addItem(newItem.value)">
   <input [formControl]="newItem" class="form-control" type="text" placeholder="Add Item">
   <button type="submit" class="btn btn-primary">
-    add
     <i class="bi bi-plus-circle-fill"></i>
   </button>
 </form>
