@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Roommates.Logic;
+using Roommates.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,6 +10,13 @@ namespace Roommates.Controllers
     [ApiController]
     public class GroceriesController : ControllerBase
     {
+        [HttpPost("addItem")]
+        public ActionResult<int> addItem([FromBody] Item newItem)
+        {
+            return ItemsLogic.addItem(newItem);
+
+        }
+
         // GET: api/<GroceriesController>
         [HttpGet]
         public IEnumerable<string> Get()
